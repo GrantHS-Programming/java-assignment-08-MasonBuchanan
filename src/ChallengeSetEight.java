@@ -6,6 +6,7 @@ public class ChallengeSetEight {
         story();
     }
 
+    //all of the pages
     static pages page0 = new pages("Your wake up on the floor of a dark house. \nTheres a door behind you, stairs leading \nup to your left, and a hallway you \ncant see down in front of you. \nwhat do you do?\n1: open the door\n2: walk up the stairs\n3: walk down the hallway",1,2,3);
     static pages page1 = new pages("You try to open the door but its locked.\n1: Walk up the stairs\n2: Walk down the hallway" ,2,3);
     static pages page2 = new pages("You walk up the stairs and find 2 doors.\n1: Go in the first door\n2: Go in the second door\n3: Go back down the stairs",7,6,3);
@@ -16,6 +17,7 @@ public class ChallengeSetEight {
     static pages page7 = new pages("The first door is locked.\n1: try to open the other door\n2: go back downstairs",6,3);
     static pages page8 = new pages("You break the window and climb down to the street. THE END");
 
+    //takes the users input and prints the pages
     public static void story(){
         String end = "yes";
         int input;
