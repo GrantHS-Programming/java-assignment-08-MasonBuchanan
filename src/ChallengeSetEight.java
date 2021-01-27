@@ -11,7 +11,7 @@ public class ChallengeSetEight {
     static pages page1 = new pages("You try to open the door but its locked.\n1: Walk up the stairs\n2: Walk down the hallway" ,2,3);
     static pages page2 = new pages("You walk up the stairs and find 2 doors.\n1: Go in the first door\n2: Go in the second door\n3: Go back down the stairs",7,6,3);
     static pages page3 = new pages("You walk down the hallway into the kitchen. you see a shelf and a sink\n1: Go to the shelf\n2: Go to the sink\n2: Go back to the stairs",4,5,2);
-    static pages page4 = new pages("You go to the shelf and find a key. You take the key to the front door and unlock it. THE END",1,2,3);
+    static pages page4 = new pages("You go to the shelf and find a key. You take the key to the front door and unlock it. THE END");
     static pages page5 = new pages("You go to the sink and try to turn it on but it doesn't work.\n1: Go back to the stairs\n2: GO to the shelf");
     static pages page6 = new pages("You open the door and walk into the room. the room is empty but theres a window in the corner.\n1: Break the window\n2: Go back downstairs" ,8,3);
     static pages page7 = new pages("The first door is locked.\n1: try to open the other door\n2: go back downstairs",6,3);
@@ -164,6 +164,9 @@ public class ChallengeSetEight {
                 end = myScanner.next();
                 if (end.equals("yes")){
                     currentPage = 0;
+                }
+                else {
+                    return;
                 }
             }
         }
